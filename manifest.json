@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Traductor de Filas",
+  "version": "1.0",
+  "description": "Traduce una fila seleccionada de una tabla.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://fms-report.transmilenio.gov.co/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
